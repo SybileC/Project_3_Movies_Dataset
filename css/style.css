@@ -1,0 +1,18 @@
+/* Set body background color */
+body {
+    background: lightcyan;
+    }
+
+.container {
+    word-wrap: break-word;
+  }
+
+.jumbotron {
+    background-color: skyblue;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
