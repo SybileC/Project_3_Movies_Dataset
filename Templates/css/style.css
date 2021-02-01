@@ -1,18 +1,28 @@
 /* Set body background color */
 body {
-    background: lightcyan;
-    }
-
-.container {
-    word-wrap: break-word;
+  background: lightcyan;
   }
 
 .jumbotron {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
-.center {
-    margin: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
+/* style submit button */
+.button {
+border-radius: 12px;
+background-color:#555555;
+color:white;
+}
+
+input[type=text]{
+box-sizing: border-box;
+border-radius: 4px;
+border: 1px solid #ccc;
+word-wrap: break-word;
+}
+
+input[type=text]:focus {
+border: 2px solid lightsteelblue;
+height: 100px;
+width: 400px;
+}
