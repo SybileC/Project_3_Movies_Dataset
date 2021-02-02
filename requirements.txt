@@ -1,6 +1,6 @@
 Flask==1.1.2
 pandas>=1.1.1
-sklearn>=1.1.1
+sklearn>=0.24.1
 numpy>=1.1.1
 itertools>=1.1.1
 matplotlib>=1.1.1
