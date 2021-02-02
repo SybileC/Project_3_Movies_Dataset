@@ -21,6 +21,7 @@ border: 1px solid #ccc;
 word-wrap: break-word;
 }
 
+/* Change input box size and border color when clicked on */
 input[type=text]:focus {
 border: 2px solid lightsteelblue;
 height: 100px;
