@@ -7,10 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <!-- <script type="text/python">
-        
-      
-    </script> -->
     <style>
         /* Set body background color */
         body {
@@ -61,19 +57,25 @@
 </head>
 
 <body>
+    <!-- Start of container -->
     <div class="container">
+        <!-- Start of jumbotron -->
         <div class="jumbotron">
             <h1><strong>Do you like the movie?</strong></h1>
             <h3>Everybody has a favorite movie line, even movie moguls. We would love to have your review for the next
                 movie, so go ahead and write what you think!</h3>
         </div>
+        <!-- End of jumbotron -->
         <div>
+            <!-- First row -->
             <div class="row">
+                <!-- first column within row -->
                 <div class="col-md-4">
                     <center>
                         <img src="https://raw.githubusercontent.com/mariasierralizarazo/Project_3_Movies_Dataset/master/Figures/Movie.jpg" alt="The Lion King" width="300" height="400"></img>
                     </center>
                 </div>
+                <!-- second column within row -->
                 <div class="col-md-8">
                     <center>
                         <strong>The Lion King - </strong>
@@ -85,46 +87,38 @@
                         Stars: Donald Glover, Beyoncé, Seth Rogen.
                         <br>
                         <center>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <form>
-                                        <br>
-                                        <input type="radio" class="like" name="opp" value="like">
-                                        <label for="like">YES, I liked the movie!</label><br>
-                                        <input type="radio" class="dislike" name="opp" value="dislike">
-                                        <label for="dislike">NO, I did not like it</label></br>
-                                        <input type="radio" class="other" name="opp" value="other">
-                                        <label for="other">It was just a movie</label>
-                                    </form>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h1 class="result">{{res}}/h2>
-                                </div>
-                            </div>
+                            <form>
+                                <br>
+                                <input type="radio" class="like" name="opp" value="like">
+                                <label for="like">YES, I liked the movie!</label><br>
+                                <input type="radio" class="dislike" name="opp" value="dislike">
+                                <label for="dislike">NO, I did not like it</label></br>
+                                <input type="radio" class="other" name="opp" value="other">
+                                <label for="other">It was just a movie</label>
+                            </form>
                         </center>
                         <br><br>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <center>
-                                    <form action="#" method="POST">
-                                        <label for="feedback">Write your review here:</label><br>
-                                        <input type="text" name ="feedback" value="I enjoyed it!">
-                                        <br><br>
-                                        <input class="button" type="submit" value="submit">
-                                    </form>
-                                </center>
-                            </div>
-                        </div>
+                        <center>
+                            <form action="#" method="POST">
+                                <label for="feedback">Write your review here:</label><br>
+                                <input type="text" name ="feedback" value="I enjoyed it!">
+                                <br><br>
+                                <input class="button" type="submit" value="submit">
+                            </form>
+                        </center>
                     </center>
                 </div>
             </div>
             <br><br><br>
+            <!-- Second row -->
             <div class="row">
+                <!-- First column within row -->
                 <div class="col-md-4">
                     <center>
                         <img src="https://raw.githubusercontent.com/mariasierralizarazo/Project_3_Movies_Dataset/master/Figures/Avengers_Infinity_War.PNG" alt="Avengers: Infinity War" width="300" height="400"></img>
                     </center>
                 </div>
+                <!-- Second column within row -->
                 <div class="col-md-8">
                     <center>
                         <strong>Avengers: Infinity War - </strong>
@@ -135,46 +129,38 @@
                         Stars: Robert Downey, Jr., Chris Hemsworth, Mark Ruffalo.
                         <br>
                         <center>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <form>
-                                        <br>
-                                        <input type="radio" class="like" name="opp" value="like">
-                                        <label for="like">YES, I liked the movie!</label><br>
-                                        <input type="radio" class="dislike" name="opp" value="dislike">
-                                        <label for="dislike">NO, I did not like it</label></br>
-                                        <input type="radio" class="other" name="opp" value="other">
-                                        <label for="other">It was just a movie</label>
-                                    </form>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h1 class="result">0</h2>
-                                </div>
-                            </div>
+                            <form>
+                                <br>
+                                <input type="radio" class="like" name="opp" value="like">
+                                <label for="like">YES, I liked the movie!</label><br>
+                                <input type="radio" class="dislike" name="opp" value="dislike">
+                                <label for="dislike">NO, I did not like it</label></br>
+                                <input type="radio" class="other" name="opp" value="other">
+                                <label for="other">It was just a movie</label>
+                            </form>
                         </center>
                         <br><br>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <center>
-                                    <form >
-                                        <label for="feedback">Write your review here:</label><br>
-                                        <input type="text" class="feedback" value="I enjoyed it!">
-                                        <br><br>
-                                        <input class="button" type="submit" value="submit">
-                                    </form>
-                                </center>
-                            </div>
-                        </div>
+                        <center>
+                            <form >
+                                <label for="feedback">Write your review here:</label><br>
+                                <input type="text" class="feedback" value="I enjoyed it!">
+                                <br><br>
+                                <input class="button" type="submit" value="submit">
+                            </form>
+                        </center>
                     </center>
                 </div>
             </div>
             <br><br>
+            <!-- Third row -->
             <div class="row">
+                <!-- First column within row -->
                 <div class="col-md-4">
                     <center>
                         <img src="https://raw.githubusercontent.com/mariasierralizarazo/Project_3_Movies_Dataset/master/Figures/Seven_Pounds.PNG" alt="Seven Pounds" width="300" height="400"></img>
                     </center>
                 </div>
+                <!-- Second column within row -->
                 <div class="col-md-8">
                     <center>
                         <strong>Seven Pounds - </strong>
@@ -185,42 +171,32 @@
                         Stars: Will Smith, Rosario Dawson, Woody Harrelson.
                         <br>
                         <center>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <form>
-                                        <br>
-                                        <input type="radio" class="like" name="opp" value="like">
-                                        <label for="like">YES, I liked the movie!</label><br>
-                                        <input type="radio" class="dislike" name="opp" value="dislike">
-                                        <label for="dislike">NO, I did not like it</label></br>
-                                        <input type="radio" class="other" name="opp" value="other">
-                                        <label for="other">It was just a movie</label>
-                                    </form>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h1 class="result">0</h2>
-                                </div>
-                            </div>
+                            <form>
+                                <br>
+                                <input type="radio" class="like" name="opp" value="like">
+                                <label for="like">YES, I liked the movie!</label><br>
+                                <input type="radio" class="dislike" name="opp" value="dislike">
+                                <label for="dislike">NO, I did not like it</label></br>
+                                <input type="radio" class="other" name="opp" value="other">
+                                <label for="other">It was just a movie</label>
+                            </form>
                         </center>
                         <br><br>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <center>
-                                    <form>
-                                        <label for="feedback">Write your review here:</label><br>
-                                        <input type="text" class="feedback" value="I enjoyed it!">
-                                        <br><br>
-                                        <input class="button" type="submit" value="submit">
-                                    </form>
-                                </center>
-                            </div>
-                        </div>
+                        <center>
+                            <form>
+                                <label for="feedback">Write your review here:</label><br>
+                                <input type="text" class="feedback" value="I enjoyed it!">
+                                <br><br>
+                                <input class="button" type="submit" value="submit">
+                            </form>
+                        </center>
                     </center>
                 </div>    
             </div>
             <br><br><br>
         </div>
     </div>
+    <!-- End of container -->
 
 
 
