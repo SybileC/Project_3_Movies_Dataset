@@ -106,9 +106,9 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <center>
-                                    <form>
+                                    <form action="#" method="POST">
                                         <label for="feedback">Write your review here:</label><br>
-                                        <input type="text" class="feedback" value="I enjoyed it!">
+                                        <input type="text" name ="feedback" value="I enjoyed it!">
                                         <br><br>
                                         <input class="button" type="submit" value="submit">
                                     </form>
@@ -156,7 +156,7 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <center>
-                                    <form action="{{ url_for('get_info') }}" method="post">
+                                    <form >
                                         <label for="feedback">Write your review here:</label><br>
                                         <input type="text" class="feedback" value="I enjoyed it!">
                                         <br><br>

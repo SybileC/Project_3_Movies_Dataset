@@ -4,7 +4,6 @@ from spacy.lang.en.stop_words import STOP_WORDS
 import texthero as hero
 from scipy import sparse
 import pickle
-review = "hello world by me is happy and kind"
 def classification_func(review):
     # Load English tokenizer, tagger, parser, NER and word vectors
     nlp = English()
@@ -29,7 +28,5 @@ def classification_func(review):
 
     loaded_model = pickle.load(open("final_model.sav", 'rb'))
     result = loaded_model.predict(sA)
-    print("results: ", result)
-
-
-classification_func(review)
+    # print("results: ", result)
+    return(result[0])
