@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, render_template
 #from api.data import data_connector
 
+from flask import request
+
 app = Flask(__name__, static_url_path='')
 
 
@@ -8,6 +10,12 @@ app = Flask(__name__, static_url_path='')
 @app.route('/')
 def index():
     return render_template('html/index.html')
+
+
+@app.route('/get_info', methods=['POST'])
+def get_info():
+
+    return(request.form['feedback'])
 
 
 # serve data from the flask app

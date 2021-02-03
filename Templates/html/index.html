@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <!-- <script type="text/javascript">
+    <!-- <script type="text/python">
         
       
     </script> -->
@@ -156,7 +156,7 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <center>
-                                    <form>
+                                    <form action="{{ url_for('get_info') }}" method="post">
                                         <label for="feedback">Write your review here:</label><br>
                                         <input type="text" class="feedback" value="I enjoyed it!">
                                         <br><br>

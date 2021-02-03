@@ -15,3 +15,11 @@ dislike.on("click", function() {
 other.on("click", function() {
     document.getElementsByClassName("result").value = "Neutral"
 })
+
+var button = d3.select(".button");
+
+var form = d3.select(".feedback");
+
+form.on("click", function() {
+    document.getElementsByClassName()
+})
