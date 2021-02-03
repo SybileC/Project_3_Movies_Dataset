@@ -17,7 +17,7 @@ def index():
             res_final = "NEGATIVE REVIEW"
         else:
             res_final = "POSITIVE REVIEW"
-        return render_template('html/results.html',res=res_final)
+        return render_template('html/results.html',res=[res_final,review])
     else:
         return render_template('html/index.html')
 
