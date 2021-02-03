@@ -47,9 +47,25 @@
             width: 400px;
             color: black;
         }
+        h2 {
+           font-size: 50px; 
+           font-weight: bold;
+        }
 
-        .result {
-            font-size: 80px;
+        h4 {
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .borderexample {
+            border-style:solid;
+            border-color: darkgray;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        hr {
+            color: black;
         }
 
     </style>
@@ -66,14 +82,22 @@
                 movie, so go ahead and write what you think!</h3>
         </div>
         <!-- End of jumbotron -->
+        <br><br><br><br><br><br>
         <div>
             <div class="row"> 
-                <div class="col-md-12">
-                <center> <h2>{{res[0]}}</h2> </center>
-                <center> <h2>{{res[1]}}</h2> </center>
+                <center>
+                <div class="col-md-4 borderexample">
+                    <center> <h2 class="card-title">{{res[0]}}</h2> </center>
+                    <hr>
+                    <br><br>
+                    <center> <h4 class="card-text">{{res[1]}}</h4> </center>
+                    <br><br>
+                    <center><p class="lead">
+                        <a class="btn btn-primary btn-lg" href="index.html" role="button">return to main page</a>
+                    </p></center>
+                </div>
+                </center>
             </div>
-            </div>
-       
         </div>
     </div>
     <!-- End of container -->
